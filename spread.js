@@ -107,6 +107,6 @@ console.log(city);
 /** 객체 person을 만들고 name과 age를 구조 분해 할당하여 변수 userName과 userAge에 각각 저장한 후, 두 변수를 활용하여 아래와 같은 형식의 문자열을 출력하는 코드를 작성하세요. */
 
 const person = { name: '김창완', age: 38 };
-const { userName, userAge } = person;
+const { name: userName, age: userAge } = person;
 
 console.log(`이름: ${ userName }, 나이: ${ userAge }`);
