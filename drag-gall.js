@@ -1,0 +1,1 @@
+const imgDragCont = document.getElementById('imgDragCont');

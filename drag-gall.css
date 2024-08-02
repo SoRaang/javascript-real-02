@@ -1,0 +1,27 @@
+#imgDragCont {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    padding: 20px;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid rgb(0 0 0 / .1);
+    border-radius: 30px;
+    background-color: lightgoldenrodyellow;
+}
+
+.img-element {
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgb(0 0 0 / .1);
+    border-radius: 10px;
+
+    &.dragging {
+        opacity: .5;
+        scale: .8;
+        transition: .15s;
+    }
+}
