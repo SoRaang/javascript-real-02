@@ -7,19 +7,21 @@
         <title>Document</title>
 
         <link rel="stylesheet" href="./image-gallery.css">
-        <script type="text/javascript" src="image-gallery.js" defer></script>
+        <script type="text/javascript" src="./image-gallery.js" defer></script>
     </head>
     <body>
         <div id="wrap">
-            <div id="imgDragCont">
-                <img class="img-element" src="https://picsum.photos/200/200?random=1" alt="랜덤 이미지 1" draggable="true">
-                <img class="img-element" src="https://picsum.photos/200/200?random=2" alt="랜덤 이미지 2" draggable="true">
-                <img class="img-element" src="https://picsum.photos/200/200?random=3" alt="랜덤 이미지 3" draggable="true">
-                <img class="img-element" src="https://picsum.photos/200/200?random=4" alt="랜덤 이미지 4" draggable="true">
+            <div id="imgCont">
+                <img class="img-element active" src="https://picsum.photos/640/360?random=1" alt="랜덤 이미지 1" data-slide-index="0">
+                <img class="img-element" src="https://picsum.photos/640/360?random=2" alt="랜덤 이미지 2" data-slide-index="1">
+                <img class="img-element" src="https://picsum.photos/640/360?random=3" alt="랜덤 이미지 3" data-slide-index="2">
+                <img class="img-element" src="https://picsum.photos/640/360?random=4" alt="랜덤 이미지 4" data-slide-index="3">
             </div>
 
-            <button type="button" id="btnPrev"><</button>
-            <button type="button" id="btnNext">></button>
+            <div id="slideControllers">
+                <button type="button" id="btnPrev"><</button>
+                <button type="button" id="btnNext">></button>
+            </div>
         </div>
     </body>
 </html>
