@@ -20,7 +20,7 @@ imgElems.forEach(img => {
         console.log('1')
     });
 
-    img.addEventListener('drop', () => {
+    img.addEventListener('drop', (e) => {
         if (currentDrag !== img) {
             dragCont.insertBefore(currentDrag, img);
         }
