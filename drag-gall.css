@@ -20,8 +20,19 @@
     border-radius: 10px;
 
     &.dragging {
+        box-shadow: 0 1rem 1rem rgb(0 0 0 / .2);
         opacity: .5;
         scale: .8;
         transition: .15s;
+    }
+}
+
+@keyframes shake {
+    from {
+        rotate: 5deg;
+    }
+
+    to {
+        rotate: -5deg;
     }
 }
