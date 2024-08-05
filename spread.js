@@ -110,3 +110,26 @@ const person = { name: '김창완', age: 38 };
 const { name: userName, age: userAge } = person;
 
 console.log(`이름: ${ userName }, 나이: ${ userAge }`);
+
+// ------------------------------------------------------------------------------------------------------
+
+/** 중간 문제 */
+
+/** 다음 객체 car를 스프레드 연산자를 사용하여 복사하고, model을 "전기차"로 수정한 새로운 객체 newCar를 생성하는 코드를 작성하시오. */
+
+const car = { brand: '현대', model: '아이오닉', year: 2023 }
+const newCar = { ... car, model: '전기차' };
+
+console.log(newCar);
+
+// ------------------------------------------------------------------------------------------------------
+
+/** 중간 문제 */
+
+/** 다음 두 배열 array1 과 array2 를 스프레드 연산자를 사용하여 하나의 배열로 합친 후, 중복된 값을 제거한 배열을 출력하는 코드를 작성하세요. */
+
+const array1 = [1, 2, 3, 4, 5];
+const array2 = [4, 5, 6, 7, 8];
+const newArray = [ ... new Set([...array1, ...array2])];
+
+console.log(newArray);
